@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet");
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,20 +14,306 @@ code {
 }
 
 a {
-  font-weight: 500;
+  text-decoration: none!important;
+  color: #0e3654;
 }
 
-.maincard {
-    position: relative;
-    text-align: center;
-    color: white;
+a:link{
+  text-decoration: none!important;
 }
-    
-.cardtitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    font-size: 3.5vw;
+
+
+
+/* -- Style Header -- */
+
+.header {
+	background-color: #ffffff;
+	min-width: 520px;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	z-index: 100;
 }
+
+.header__wrap {
+	max-width: 1100px;
+	margin: 0 auto;
+	height: 7em;
+	padding: 0px 30px 20px 30px;
+	justify-content: space-between;
+  	align-items: flex-end;
+  	display: flex;
+ 	flex-wrap: wrap;
+}
+
+.header__left {
+	letter-spacing: 1px;
+	display: flex;
+	align-items: flex-start;
+	margin-right: 5px;
+}
+
+.header__right {
+	color: #0e3654;
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	font-weight: 700;
+
+}
+
+.header__logo {
+	height: 7em;
+	padding: 1em;
+}
+
+
+/* -- Home Page -- */
+
+/* -- Main Banner -- */
+
+.main__banner {
+	width: 1fr;
+	height: 1fr;
+	justify-content: center;
+	padding: auto;
+}
+
+.mainbanner__wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+}
+
+.mainbanner__image {
+	width: 100%;
+}
+
+/* -- About Us -- */
+
+.about__us {
+	font-weight: 700;
+	width: 1fr;
+	height: 400px;
+	max-width: 1fr;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	padding: 30px 50px;
+	justify-content: center;
+}
+
+.aboutus__wrapper {
+	flex: 1;
+	max-width: 500px;
+	min-width: 400px;
+	margin-right: 10px;
+
+}
+
+.about__image {
+	max-width:100%;
+	max-height:100%;
+
+}
+
+.aboutus__text {
+	flex: 2;
+	max-width: 500px;
+	min-width: 400px;
+	margin-left: 10px;
+
+}
+
+/* -- Our Services -- */
+
+.our__services {
+	font-weight: 700;
+	width: 1fr;
+	height: 400px;
+	max-width: 1fr;
+	display: flex;
+	flex-direction: row;
+	padding: 30px 50px;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 10px;
+	background-color: #2daae1;
+}
+
+.ourservices__item {
+	flex: 1;
+	max-width: 400px;
+	margin: 0 40px;
+
+}
+
+h1 {
+	font-weight: 700;
+	color: #0e3654;
+}
+
+/* -- Footer -- */
+
+.footer  {
+	font-weight: 700;
+	width: 1fr;
+	height: 110px;
+	max-width: 1fr;
+	display: flex;
+	flex-direction: row;
+	padding: 30px 50px;
+	justify-content: space-between;
+	text-align: center;
+	background-color: #0e3654;
+	padding-bottom: 10px;
+}
+
+.footer a {
+	color: white;
+}
+
+.footer h6 {
+	color: white;
+	font-size: 12px;
+}
+
+.footer__logo {
+	height: 3em;
+	padding-bottom: 5px;
+}
+
+/* -- Contact -- */
+
+.contact__banner {
+	width: 1fr;
+	height: 1fr;
+	justify-content: center;
+	padding: auto;
+}
+
+.contactbanner__wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+}
+
+.contactbanner__image {
+	width: 100%;
+}
+
+.contact {
+	font-weight: 700;
+	width: 1fr;
+	height: 450px;
+	max-width: 1fr;
+	display: flex;
+	justify-content: flex-start;
+	text-align: center;
+	background-color: #2daae1;
+	padding: 30px 50px;
+	flex-direction: column;
+}
+
+.form__left {
+	padding: 10px;
+}
+
+.formleft__item {
+	padding: 10px;
+}
+
+.formright__item {
+	width: 565px;
+	height: 200px;
+}
+
+@media (max-width: 800px) {
+	.contact__banner {
+	display: none;
+}
+	.contact {
+	height: 750px;
+}
+	.form__left {
+	display: flex;
+	flex-direction: column;
+}
+	.formright__item {
+	width: 80%;
+	height: 200px;
+}
+}
+
+@media (max-width: 800px) {
+	.header__wrap {
+	max-width: 100%;
+	height: 10em;
+	padding: 0px 30px 20px 30px;
+	display: flex;
+	flex-direction: column;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.header__left {
+	letter-spacing: 1px;
+	margin-right: 5px;
+}
+
+.header__right {
+	color: #0e3654;
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	font-weight: 700;
+
+}
+
+.header__logo {
+	height: 7em;
+	padding: 1em;
+}
+}
+
+@media (max-width: 800px) {
+	.aboutus__wrapper {
+	display: none;
+
+}
+}
+
+@media (max-width: 800px) {
+	.our__services {
+	font-weight: 700;
+	width: 1fr;
+	height: 750px;
+	max-width: 1fr;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 50px;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 10px;
+	background-color: #2daae1;
+}
+
+	.ourservices__item {
+	flex: 1;
+	max-width: 400px;
+	margin: 0 40px;
+
+}
+}
+
+
+
+

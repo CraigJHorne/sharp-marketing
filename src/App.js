@@ -1,14 +1,24 @@
 import React from 'react';
 import './App.css';
-import NavWebsite from './NavWebsite';
-import HeroBanner from './HeroBanner';
+import './index.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Contact from './Contact';
 
-const App = () => {
+function App() {
   return (
-  	<div>
-    <NavWebsite />
-    <HeroBanner />
-    </div>
+    <Router>
+      <div className="app">
+       <Switch>
+       <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+       </Switch>
+      </div>
+    </Router>
   );
 }
 
